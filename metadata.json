@@ -1,0 +1,6 @@
+{
+  "name": "Lịch Công Tác Tuần 38 - HĐND TP.HCM",
+  "description": "Lịch công tác Tuần 38 Thường trực, các Ban HĐND, Văn phòng Đoàn ĐBQH và HĐND TP. Hồ Chí Minh (21-9-2026 - 27-9-2026) với giao diện tương tác thông minh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
