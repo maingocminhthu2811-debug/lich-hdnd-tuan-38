@@ -250,18 +250,22 @@
 
   <main class="relative z-10 flex-grow max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-6 space-y-6">
     
-    <!-- Khung tiêu đề trang trọng phong cách ấm áp (Warm Executive Amber / Stone) -->
-    <div class="bg-gradient-to-r from-stone-950 via-stone-900 to-amber-950 text-white rounded-3xl p-6 sm:p-9 shadow-2xl relative overflow-hidden border border-amber-500/30">
-      <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-amber-500/20 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
-      <div class="relative z-10 max-w-3xl">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mb-3 text-white">
+    <!-- Khung tiêu đề trang trọng: Nền đậm chữ vàng theo yêu cầu -->
+    <div class="bg-gradient-to-r from-stone-950 via-amber-950 to-stone-900 rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden border border-amber-500/40 text-center flex flex-col items-center justify-center">
+      <!-- Ánh sáng hào quang ấm áp nền phía sau -->
+      <div class="absolute -right-8 -bottom-8 w-64 h-64 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-8 -top-8 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 max-w-3xl flex flex-col items-center text-center">
+        <!-- Chữ LỊCH TUẦN 38 thu nhỏ vừa vặn, không mất dấu, chữ vàng sắc nét trên nền đậm -->
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wide uppercase mb-2 text-amber-300 py-1 leading-normal drop-shadow-md">
           LỊCH TUẦN 38
         </h2>
-        <div class="flex flex-wrap items-center gap-y-2 gap-x-4 text-base sm:text-lg text-amber-200/90 font-medium">
-          <span class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            Từ ngày 21-9-2026 đến ngày 27-9-2026
-          </span>
+        
+        <!-- Khung ngày tháng canh giữa hài hòa -->
+        <div class="flex items-center justify-center gap-2 text-sm sm:text-base font-semibold text-amber-100 bg-amber-900/60 px-4 py-1.5 rounded-full border border-amber-500/40 shadow-sm mt-1">
+          <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Từ ngày 21-9-2026 đến ngày 27-9-2026</span>
         </div>
       </div>
     </div>
@@ -345,7 +349,7 @@
             time: "08g00",
             session: "Sáng",
             title: "Đồng chí Võ Văn Minh chủ trì Kỳ họp thứ Năm (chuyên đề), HĐND Thành phố khóa XI.",
-            host: "Đ/c Võ Văn Minh",
+            host: "Đồng chí Võ Văn Minh",
             attendees: "- Thường trực HĐND TP,\n- Lãnh đạo và Ủy viên chuyên trách các Ban HĐND TP,\n- Lãnh đạo Văn phòng,\n- Lãnh đạo và Chuyên viên các Phòng chuyên môn.",
             location: "Hội Trường Thành phố số 111 Bà Huyện Thanh Quan, phường Xuân Hòa",
             notes: "",
@@ -356,8 +360,8 @@
             time: "11g45",
             session: "Sáng",
             title: "Tham gia Đoàn thăm một số Nhà hát nhân dịp Giỗ Tổ Sân khấu năm 2026 (Theo Chương trình số 1020/CTr-HĐND ngày 19-9-2026 của Thường trực HĐND Thành phố)",
-            host: "Đ/c Huỳnh Thanh Nhân",
-            attendees: "- Lãnh đạo Ban VH-XH,\n- Đ/c Nguyễn Quốc Trí,\n- Phòng Dân nguyện và Truyền Thông, Phòng HCTCQT và chuyên viên có liên quan.",
+            host: "Đồng chí Huỳnh Thanh Nhân",
+            attendees: "- Lãnh đạo Ban Văn hóa - Xã hội,\n- Đồng chí Nguyễn Quốc Trí,\n- Phòng Dân nguyện và Truyền Thông, Phòng HCTCQT và chuyên viên có liên quan.",
             location: "- Nhà Thờ Tổ sân khấu - Hội sân Khấu Thành phố.\n- Nhà hát ca múa nhạc dân tộc Bông Sen.\n- Trung tâm Nghệ thuật Thành phố.",
             notes: "",
             highlight: false
@@ -375,7 +379,7 @@
             time: "08g00",
             session: "Sáng",
             title: "Đồng chí Võ Văn Minh chủ trì Kỳ họp thứ Năm (chuyên đề), HĐND Thành phố khóa XI.",
-            host: "Đ/c Võ Văn Minh",
+            host: "Đồng chí Võ Văn Minh",
             attendees: "- Thường trực HĐND TP,\n- Lãnh đạo và Ủy viên chuyên trách các Ban HĐND TP,\n- Lãnh đạo Văn phòng,\n- Lãnh đạo và Chuyên viên các Phòng chuyên môn.",
             location: "Hội Trường Thành phố số 111 Bà Huyện Thanh Quan, phường Xuân Hòa",
             notes: "",
@@ -386,8 +390,8 @@
             time: "11g30",
             session: "Sáng",
             title: "Tham gia Đoàn thăm một số Nhà hát nhân dịp Giỗ Tổ Sân khấu năm 2026 (Theo Chương trình số 1020/CTr-HĐND ngày 19-9-2026 của HĐND Thành phố)",
-            host: "Đ/c Huỳnh Thanh Nhân",
-            attendees: "- Lãnh đạo Ban VH-XH,\n- Đ/c Nguyễn Quốc Trí,\n- Phòng Dân nguyện và Truyền Thông, Phòng HCTCQT và chuyên viên có liên quan.",
+            host: "Đồng chí Huỳnh Thanh Nhân",
+            attendees: "- Lãnh đạo Ban Văn hóa - Xã hội,\n- Đồng chí Nguyễn Quốc Trí,\n- Phòng Dân nguyện và Truyền Thông, Phòng HCTCQT và chuyên viên có liên quan.",
             location: "- Nhà hát Nghệ thuật hát Bội.\n- Nhà hát Kịch Sân khấu nhỏ 5B.",
             notes: "",
             highlight: false
@@ -398,7 +402,7 @@
             session: "Chiều",
             title: "Đồng chí Võ Văn Minh dự Hội nghị lần thứ 9 Ban Chấp hành Đảng bộ Thành phố.",
             host: "",
-            attendees: "- Đ/c Võ Văn Minh\n- Các Phó Chủ tịch HĐND TP;\n- Trưởng các Ban HĐND TP;\n- Đ/c Võ Anh Tuấn.",
+            attendees: "- Đồng chí Võ Văn Minh\n- Các Phó Chủ tịch HĐND TP;\n- Trưởng các Ban HĐND TP;\n- Đồng chí Võ Anh Tuấn.",
             location: "Hội Trường 111 Bà Huyện Thanh Quan, phường Xuân Hòa",
             notes: "",
             highlight: true
@@ -409,7 +413,7 @@
             session: "Chiều",
             title: "Khảo sát thực hiện chương trình “Dân hỏi Chính quyền trả lời” định kỳ tháng 10-2026.",
             host: "",
-            attendees: "Lãnh đạo, UVCT, chuyên viên Ban KT-NS và các đơn vị có liên quan.",
+            attendees: "Lãnh đạo, UVCT, chuyên viên Ban Kinh tế - Ngân sách và các đơn vị có liên quan.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: false
@@ -438,7 +442,7 @@
             time: "08g00",
             session: "Sáng",
             title: "Đồng chí Võ Văn Minh họp Thường trực Thành ủy.",
-            host: "Đ/c Võ Văn Minh",
+            host: "Đồng chí Võ Văn Minh",
             attendees: "",
             location: "Trụ sở 56 Trương Định",
             notes: "",
@@ -449,7 +453,7 @@
             time: "08g00",
             session: "Sáng",
             title: "Triển khai Kế hoạch giám sát việc khắc phục các vướng mắc, tồn đọng của Thành phố đã được cấp có thẩm quyền kết luận, chỉ đạo nhưng đến năm 2025 chưa triển khai thực hiện được, chưa hoàn thành và tháo gỡ các công trình, dự án có khó khăn, vướng mắc không được đưa vào sử dụng gây lãng phí.",
-            host: "Đ/c Nguyễn Văn Thọ",
+            host: "Đồng chí Nguyễn Văn Thọ",
             attendees: "Thành viên Đoàn giám sát và các cá nhân có liên quan (Có giấy mời riêng)",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
@@ -460,8 +464,8 @@
             time: "08g00",
             session: "Sáng",
             title: "Khảo sát Sở Tài chính về việc xây dựng các dự thảo Nghị quyết triển khai thực hiện Luật Phát triển đô thị dự kiến trình tại kỳ họp thứ sáu (cả ngày).",
-            host: "Đ/c Nguyễn Công Danh",
-            attendees: "Lãnh đạo, UVCT, chuyên viên Ban KT-NS và các đơn vị có liên quan.",
+            host: "Đồng chí Nguyễn Công Danh",
+            attendees: "Lãnh đạo, UVCT, chuyên viên Ban Kinh tế - Ngân sách và các đơn vị có liên quan.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: false
@@ -471,8 +475,8 @@
             time: "08g00",
             session: "Sáng",
             title: "Thẩm tra Danh mục các khu đất thực hiện đấu thầu lựa chọn nhà đầu tư thực hiện dự án đầu tư có sử dụng đất trên địa bàn Thành phố Hồ Chí Minh.",
-            host: "Đ/c Hoàng Tùng",
-            attendees: "- Đ/c Nguyễn Văn Dũng,\n- Lãnh đạo, ủy viên và chuyên viên Ban Đô thị và các cá nhân, đơn vị có liên quan.",
+            host: "Đồng chí Hoàng Tùng",
+            attendees: "- Đồng chí Nguyễn Văn Dũng,\n- Lãnh đạo, ủy viên và chuyên viên Ban Đô thị và các cá nhân, đơn vị có liên quan.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: false
@@ -482,8 +486,8 @@
             time: "08g30",
             session: "Sáng",
             title: "Khảo sát thực trạng công tác cấp giấy tờ tùy thân và việc tiếp cận các chính sách hỗ trợ đối với trẻ em; việc tổ chức và hoạt động của các cơ sở, tổ chức cung cấp dịch vụ bảo vệ trẻ em trên địa bàn Thành phố tại Cơ sở Bảo trợ người khuyết tật trẻ mồ côi, người cao tuổi Ngọc Quý.",
-            host: "Đ/c Cao Thanh Bình",
-            attendees: "- Lãnh đạo Ban VH-XH,\n- Đ/c Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
+            host: "Đồng chí Cao Thanh Bình",
+            attendees: "- Lãnh đạo Ban Văn hóa - Xã hội,\n- Đồng chí Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
             location: "Cơ sở Bảo trợ người khuyết tật trẻ mồ côi, người cao tuổi Ngọc Quý",
             notes: "",
             highlight: false
@@ -493,7 +497,7 @@
             time: "09g30",
             session: "Sáng",
             title: "Dự Kỷ niệm 81 năm Ngày Nam bộ Kháng Chiến (23-9-1945 - 23-9-2026).",
-            host: "Đ/c Huỳnh Thanh Nhân",
+            host: "Đồng chí Huỳnh Thanh Nhân",
             attendees: "",
             location: "Đền Gia Định Ấp Ba Sòng, xã An Nhơn Tây, Củ Chi",
             notes: "",
@@ -504,8 +508,8 @@
             time: "09g45",
             session: "Sáng",
             title: "Khảo sát hiện trạng quản lý, bảo vệ và phát huy giá trị di tích Quốc gia Địa đạo Tây Nam.",
-            host: "Đ/c Cao Thanh Bình",
-            attendees: "- Lãnh đạo Ban VH-XH,\n- Đ/c Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
+            host: "Đồng chí Cao Thanh Bình",
+            attendees: "- Lãnh đạo Ban Văn hóa - Xã hội,\n- Đồng chí Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
             location: "Địa đạo Tây Nam",
             notes: "",
             highlight: false
@@ -515,8 +519,8 @@
             time: "14g00",
             session: "Chiều",
             title: "Đồng chí Võ Văn Minh chủ trì họp Ban Thường vụ Đảng ủy HĐND Thành phố.",
-            host: "Đ/c Võ Văn Minh",
-            attendees: "- Ủy viên Ban Thường vụ Đảng ủy HĐND Thành phố,\n- Đ/c Võ Anh Tuấn,\n- Đ/c Nguyễn Thị Minh Hà và Chuyên viên công tác Đảng.",
+            host: "Đồng chí Võ Văn Minh",
+            attendees: "- Ủy viên Ban Thường vụ Đảng ủy HĐND Thành phố,\n- Đồng chí Võ Anh Tuấn,\n- Đồng chí Nguyễn Thị Minh Hà và Chuyên viên công tác Đảng.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: true
@@ -526,8 +530,8 @@
             time: "14g00",
             session: "Chiều",
             title: "Khảo sát và làm việc với UBND phường Thới Hòa, phường Phú An, Trung tâm Công tác xã hội và Quỹ Bảo trợ trẻ em Bình Dương tại Trung tâm Công tác xã hội và Quỹ Bảo trợ trẻ em Bình Dương.",
-            host: "Đ/c Cao Thanh Bình",
-            attendees: "- Lãnh đạo Ban VH-XH,\n- Đ/c Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
+            host: "Đồng chí Cao Thanh Bình",
+            attendees: "- Lãnh đạo Ban Văn hóa - Xã hội,\n- Đồng chí Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
             location: "Đường NK13, khu phố Hòa Định, phường Thới Hòa",
             notes: "",
             highlight: false
@@ -537,7 +541,7 @@
             time: "15g00",
             session: "Chiều",
             title: "Đồng chí Võ Văn Minh chủ trì họp Đảng ủy HĐND Thành phố.",
-            host: "Đ/c Võ Văn Minh",
+            host: "Đồng chí Võ Văn Minh",
             attendees: "- Đảng ủy viên HĐND TP;\n- Ủy viên UBKT Đảng ủy;\n- Chuyên viên công tác Đảng.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
@@ -548,7 +552,7 @@
             time: "16g00",
             session: "Chiều",
             title: "Đồng chí Võ Văn Minh chủ trì Hội nghị công bố Quyết định thành lập các Chi bộ và chỉ định Chi ủy, Bí thư, Phó Bí thư các Chi bộ trực thuộc Đảng bộ HĐND Thành phố.",
-            host: "Đ/c Võ Văn Minh",
+            host: "Đồng chí Võ Văn Minh",
             attendees: "- Đảng ủy viên;\n- Đảng viên các Chi bộ.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
@@ -571,7 +575,7 @@
             session: "Tối",
             title: "Dự tiệc chiêu đãi nhân dịp kỷ niệm 77 năm Ngày thành lập nước Cộng hòa Nhân dân Trung Hoa.",
             host: "",
-            attendees: "Đ/c Nguyễn Trường Nhật Phượng",
+            attendees: "Đồng chí Nguyễn Trường Nhật Phượng",
             location: "Số 57-69F Đồng Khởi, phường Sài Gòn",
             notes: "",
             highlight: false
@@ -590,7 +594,7 @@
             session: "Sáng",
             title: "Đồng chí Võ Văn Minh dự Hội nghị Ban Thường vụ Thành ủy lần thứ 30.",
             host: "",
-            attendees: "- Đ/c Võ Văn Minh\n- Đ/c Nguyễn Văn Thọ",
+            attendees: "- Đồng chí Võ Văn Minh\n- Đồng chí Nguyễn Văn Thọ",
             location: "Trụ sở 56 Trương Định",
             notes: "",
             highlight: true
@@ -600,8 +604,8 @@
             time: "08g00",
             session: "Sáng",
             title: "Khảo sát Sở Công Thương về việc xây dựng các dự thảo Nghị quyết triển khai thực hiện Luật Phát triển đô thị dự kiến trình tại kỳ họp thứ sáu, HĐND Thành phố khóa XI.",
-            host: "Đ/c Nguyễn Công Danh",
-            attendees: "Lãnh đạo, UVCT, chuyên viên Ban KT-NS và các đơn vị có liên quan.",
+            host: "Đồng chí Nguyễn Công Danh",
+            attendees: "Lãnh đạo, UVCT, chuyên viên Ban Kinh tế - Ngân sách và các đơn vị có liên quan.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: false
@@ -611,8 +615,8 @@
             time: "08g00",
             session: "Sáng",
             title: "Khảo sát Trường Tiểu học - THCS - THPT Nam Sài Gòn về các khoản thu hỗ trợ giáo dục và định mức kinh tế kỹ thuật.",
-            host: "Đ/c Cao Thanh Bình",
-            attendees: "- Lãnh đạo Ban VH-XH,\n- Đ/c Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
+            host: "Đồng chí Cao Thanh Bình",
+            attendees: "- Lãnh đạo Ban Văn hóa - Xã hội,\n- Đồng chí Nguyễn Quốc Trí,\n- Chuyên viên có liên quan.",
             location: "Trường TH-THCS-THPT Nam Sài Gòn",
             notes: "",
             highlight: false
@@ -622,8 +626,8 @@
             time: "08g00",
             session: "Sáng",
             title: "Thẩm tra Danh mục khu đất dự kiến thực hiện dự án thí điểm trên địa bàn Thành phố Hồ Chí Minh năm 2026 theo Nghị quyết số 171/2024/QH15 ngày 30 tháng 11 năm 2024 của Quốc hội.",
-            host: "Đ/c Hoàng Tùng",
-            attendees: "- Đ/c Nguyễn Văn Dũng,\n- Lãnh đạo, ủy viên và chuyên viên Ban Đô thị và các cá nhân, đơn vị có liên quan.",
+            host: "Đồng chí Hoàng Tùng",
+            attendees: "- Đồng chí Nguyễn Văn Dũng,\n- Lãnh đạo, ủy viên và chuyên viên Ban Đô thị và các cá nhân, đơn vị có liên quan.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: false
@@ -633,7 +637,7 @@
             time: "10g00",
             session: "Sáng",
             title: "Khảo sát Trường THPT Hùng Vương về công tác nâng cấp, sửa chữa trường nhằm đảm bảo cơ sở vật chất phục vụ công tác giảng dạy của nhà trường.",
-            host: "Đ/c Cao Thanh Bình",
+            host: "Đồng chí Cao Thanh Bình",
             attendees: "Lãnh đạo, chuyên viên Ban Văn hóa – Xã hội",
             location: "Trường THPT Hùng Vương",
             notes: "",
@@ -655,8 +659,8 @@
             time: "14g00",
             session: "Chiều",
             title: "Làm việc với Lãnh đạo Văn phòng, Phòng công tác xây dựng Đảng.",
-            host: "Đ/c Nguyễn Văn Thọ",
-            attendees: "- Đ/c Võ Anh Tuấn,\n- Đ/c Nguyễn Thanh An,\n- Đ/c Nguyễn Thị Minh Hà và các cá nhân có liên quan.",
+            host: "Đồng chí Nguyễn Văn Thọ",
+            attendees: "- Đồng chí Võ Anh Tuấn,\n- Đồng chí Nguyễn Thanh An,\n- Đồng chí Nguyễn Thị Minh Hà và các cá nhân có liên quan.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: false
@@ -667,7 +671,7 @@
             session: "Chiều",
             title: "Dự tiếp xúc cử tri của Đại biểu Quốc hội Thành phố Hồ Chí Minh (Tổ số 6) sau kỳ họp thứ Hai - Quốc hội khóa XVI.",
             host: "",
-            attendees: "Đ/c Nguyễn Trường Nhật Phượng",
+            attendees: "Đồng chí Nguyễn Trường Nhật Phượng",
             location: "Trụ sở UBND phường Bình Tiên",
             notes: "",
             highlight: true
@@ -677,8 +681,8 @@
             time: "14g00",
             session: "Chiều",
             title: "Khảo sát Sở Nông nghiệp và Môi trường về việc xây dựng các dự thảo Nghị quyết triển khai thực hiện Luật Phát triển đô thị dự kiến trình tại kỳ họp thứ sáu, HĐND Thành phố khóa XI.",
-            host: "Đ/c Nguyễn Công Danh",
-            attendees: "Lãnh đạo, UVCT, chuyên viên Ban KT-NS và các đơn vị có liên quan.",
+            host: "Đồng chí Nguyễn Công Danh",
+            attendees: "Lãnh đạo, UVCT, chuyên viên Ban Kinh tế - Ngân sách và các đơn vị có liên quan.",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
             highlight: false
@@ -688,7 +692,7 @@
             time: "14g00",
             session: "Chiều",
             title: "Giám sát việc thực hiện Nghị quyết số 30/2021/NQ-HĐND ngày 09-12-2021 của HĐND Thành phố về quy định mức tiền thưởng và mức chi bồi dưỡng cho thành viên Ban Tổ chức, thành viên các Hội đồng chấm giải, Tổ Chuyên gia và Tổ Thư ký tham gia chấm Giải thưởng Sáng tạo Thành phố theo Kế hoạch số 189/KH-BVHXH ngày 20-8-2026 của Ban Văn hóa - Xã hội.",
-            host: "Đ/c Cao Thanh Bình",
+            host: "Đồng chí Cao Thanh Bình",
             attendees: "Lãnh đạo Ban Văn hóa - Xã hội và chuyên viên có liên quan",
             location: "Trụ sở 86 Lê Thánh Tôn",
             notes: "",
@@ -711,7 +715,7 @@
             session: "Tối",
             title: "Dự Chương trình Khai mạc Lễ hội Nghinh Ông - Thành phố Hồ Chí Minh năm 2026.",
             host: "",
-            attendees: "Đ/c Huỳnh Thanh Nhân",
+            attendees: "Đồng chí Huỳnh Thanh Nhân",
             location: "Sân khấu chính Công viên Cần Thạnh, xã Cần Giờ",
             notes: "",
             highlight: true
@@ -729,8 +733,8 @@
             time: "08g00",
             session: "Sáng",
             title: "Đồng chí Võ Văn Minh chủ trì họp Tiểu ban Kinh tế, Ban Nghiên cứu phát triển Thành phố.",
-            host: "Đ/c Võ Văn Minh",
-            attendees: "- Thành viên Tiểu ban Kinh tế, Ban nghiên cứu phát triển TP;\n- Trưởng ban: Kinh tế - Ngân sách và Đô thị HĐND TP;\n- Đại diện Lãnh đạo, Chuyên viên Văn phòng Thành ủy;\n- Đ/c Võ Anh Tuấn.",
+            host: "Đồng chí Võ Văn Minh",
+            attendees: "- Thành viên Tiểu ban Kinh tế, Ban nghiên cứu phát triển TP;\n- Trưởng ban: Kinh tế - Ngân sách và Đô thị HĐND TP;\n- Đại diện Lãnh đạo, Chuyên viên Văn phòng Thành ủy;\n- Đồng chí Võ Anh Tuấn.",
             location: "Ban Nghiên cứu phát triển Thành phố.",
             notes: "",
             highlight: true
@@ -774,7 +778,7 @@
             session: "Sáng",
             title: "Đồng chí Võ Văn Minh cùng Ban Thường vụ Thành ủy tiếp và làm việc với Đoàn công tác của Ban Thường vụ Tỉnh ủy Lào Cai.",
             host: "",
-            attendees: "- Đ/c Võ Văn Minh\n- Đ/c Nguyễn Văn Thọ",
+            attendees: "- Đồng chí Võ Văn Minh\n- Đồng chí Nguyễn Văn Thọ",
             location: "Theo lịch Thành ủy",
             notes: "",
             highlight: true
@@ -796,7 +800,7 @@
             session: "Chiều",
             title: "Đồng chí Võ Văn Minh dự tiếp xúc cử tri của đại biểu Quốc hội Đoàn Thành phố Hồ Chí Minh sau kỳ họp thứ Hai - Quốc hội khóa XVI.",
             host: "",
-            attendees: "Đ/c Võ Văn Minh",
+            attendees: "Đồng chí Võ Văn Minh",
             location: "Trụ sở UBND phường Xuân Hòa",
             notes: "",
             highlight: true
@@ -829,7 +833,7 @@
             session: "Chiều",
             title: "Đồng chí Võ Văn Minh cùng Ban Thường vụ Thành ủy tiếp và làm việc với Đoàn Kiểm tra, giám sát của Bộ Chính trị, Ban Bí thư (đợt 3).",
             host: "",
-            attendees: "- Đ/c Võ Văn Minh\n- Đ/c Nguyễn Văn Thọ",
+            attendees: "- Đồng chí Võ Văn Minh\n- Đồng chí Nguyễn Văn Thọ",
             location: "Theo lịch Thành ủy",
             notes: "",
             highlight: true
@@ -840,7 +844,7 @@
             session: "Tối",
             title: "Dự Kỷ niệm 146 năm Hotel Continental Saigon (1880 - 2026).",
             host: "",
-            attendees: "Đ/c Nguyễn Trường Nhật Phượng",
+            attendees: "Đồng chí Nguyễn Trường Nhật Phượng",
             location: "132-134 Đồng Khởi, phường Sài Gòn",
             notes: "",
             highlight: false
